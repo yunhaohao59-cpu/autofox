@@ -1,0 +1,43 @@
+# dependencies
+node_modules
+
+# output — keep dist/app for manual install, exclude binary
+dist/autofox*
+dist/win/autofox*
+dist/win/编译说明.txt
+dist/autofox.exe
+
+# auto-generated embed data
+server/embed-data.ts
+
+# code coverage
+coverage
+*.lcov
+
+# logs
+logs
+*.log
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# environment / secrets
+.env
+.env.*
+*.env
+
+# caches
+.eslintcache
+.cache
+*.tsbuildinfo
+
+# IDE
+.idea
+.vscode/settings.json
+
+# macOS
+.DS_Store
+
+# runtime data
+~/.autofox/
+
+# 敏感信息 — 绝对不能提交
+实验key/

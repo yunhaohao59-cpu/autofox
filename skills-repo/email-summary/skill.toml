@@ -1,0 +1,22 @@
+[name]
+en = "Email Summary"
+zh = "邮件摘要"
+
+[description]
+en = "Summarize long email threads into bullet points"
+zh = "将长邮件线程总结为要点"
+
+[author]
+name = "community"
+github = "https://github.com/autofox/skills"
+
+[tags]
+en = ["email", "productivity"]
+zh = ["邮件", "效率"]
+
+[trigger]
+en = ["summarize email", "邮件摘要", "总结这封邮件"]
+
+[compatibility]
+min_version = "0.1.0"
+platforms = ["linux", "windows", "macos"]

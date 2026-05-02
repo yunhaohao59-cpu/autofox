@@ -1,0 +1,21 @@
+[name]
+en = "Code Review"
+zh = "代码审查"
+
+[description]
+en = "Automatically review code changes and generate structured feedback"
+zh = "自动审查代码变更并生成结构化反馈"
+
+[author]
+name = "community"
+
+[tags]
+en = ["programming", "git", "code review"]
+zh = ["编程", "git", "代码审查"]
+
+[trigger]
+en = ["review code", "code review", "审查代码", "review this"]
+
+[compatibility]
+min_version = "0.1.0"
+platforms = ["linux", "windows", "macos"]

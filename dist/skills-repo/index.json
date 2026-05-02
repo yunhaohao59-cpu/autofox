@@ -1,0 +1,22 @@
+[
+  {
+    "id": "email-summary",
+    "name": { "en": "Email Summary", "zh": "邮件摘要" },
+    "description": { "en": "Summarize long email threads into bullet points", "zh": "将长邮件线程总结为要点" },
+    "tags": { "en": ["email", "productivity"], "zh": ["邮件", "效率"] },
+    "downloads": 1200,
+    "author": "community",
+    "version": "1.0.0",
+    "compatibility": { "min_version": "0.1.0", "platforms": ["linux", "windows", "macos"] }
+  },
+  {
+    "id": "code-review",
+    "name": { "en": "Code Review", "zh": "代码审查" },
+    "description": { "en": "Automatically review pull requests and generate structured feedback", "zh": "自动审查 PR 并生成结构化反馈" },
+    "tags": { "en": ["programming", "git"], "zh": ["编程", "git"] },
+    "downloads": 856,
+    "author": "community",
+    "version": "1.1.0",
+    "compatibility": { "min_version": "0.1.0", "platforms": ["linux", "windows", "macos"] }
+  }
+]

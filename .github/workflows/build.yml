@@ -1,0 +1,41 @@
+name: Build
+on:
+  push:
+    tags: ["v*"]
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun test
+      - run: bun run scripts/bundle-assets.ts
+      - run: bun build --compile ./server/index.ts --outfile dist/autofox
+      - uses: softprops/action-gh-release@v1
+        with:
+          files: dist/autofox
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun test
+      - run: bun run scripts/bundle-assets.ts
+      - run: bun build --compile ./server/index.ts --outfile dist/autofox.exe
+      - uses: softprops/action-gh-release@v1
+        with:
+          files: dist/autofox.exe
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun test
+      - run: bun run scripts/bundle-assets.ts
+      - run: bun build --compile ./server/index.ts --outfile dist/autofox
+      - uses: softprops/action-gh-release@v1
+        with:
+          files: dist/autofox

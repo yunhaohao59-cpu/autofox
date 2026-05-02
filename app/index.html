@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>autofox</title>
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="stylesheet" href="/app/css/variables.css">
+  <link rel="stylesheet" href="/app/css/layout.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <img src="/图片/autofox.png" alt="autofox" class="sidebar-logo" onerror="this.style.display='none'">
+        <h1>autofox</h1>
+        <button id="new-agent" title="新建 Agent">+</button>
+      </div>
+
+      <div id="room-list"></div>
+
+      <nav class="sidebar-nav">
+        <button id="nav-skills" class="nav-btn">🔧 技能市场</button>
+        <button id="nav-settings" class="nav-btn">⚙ 设置</button>
+        <button id="nav-themes" class="nav-btn">🎨 配色方案</button>
+      </nav>
+    </aside>
+
+    <main id="main">
+      <div id="chat-container">
+        <div id="brand-header">
+          <img src="/图片/autofox.png" alt="autofox" class="brand-logo" onerror="this.style.display='none'">
+          <span class="brand-name">autofox</span>
+        </div>
+        <div id="messages"></div>
+        <div id="input-area">
+          <textarea id="user-input" placeholder="输入消息... (Enter 发送, Shift+Enter 换行)" rows="1"></textarea>
+          <button id="send-btn">发送</button>
+        </div>
+      </div>
+
+      <div id="right-panel" style="display:none">
+        <div class="panel-header" id="panel-header"></div>
+        <div id="panel-content"></div>
+      </div>
+    </main>
+  </div>
+
+  <div id="overlay" style="display:none">
+    <div id="overlay-content"></div>
+  </div>
+
+  <script type="module" src="/app/js/app.js"></script>
+</body>
+</html>
